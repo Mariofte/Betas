@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% block head %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('staic', filename='css/sidebar.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/sidebar.js') }}"></script>
+    <title>App</title>
+{% endblock %}
+</head>
+<body> 
+{% block sidebar %}
+    <div id="mySidebar" class="sidebar">
+        <a href="javascipt:void(0)" class="closebar" onclick="Closerbar()">&times;</a>
+        <a href="{{ url_for('match') }}">Match</a>
+        <a href="{{ url_for('pits') }}">Pits</a>
+        <a href="{{ url_for('horarios') }}">Horarios</a>
+    </div>
+    <div id="main">
+        <button type="submit" onclick="Openbar()">&#9776;</button>
+    </div>
+{% endblock %}
+{% block body %}{% endblock %}
+</body>
+</html>
