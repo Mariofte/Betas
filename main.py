@@ -1,5 +1,3 @@
-
-
 from flask import *
 from service import API
 

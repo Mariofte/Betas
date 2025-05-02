@@ -15,7 +15,7 @@ class API:
     def post(self, sheet:int, data:list):
         client = gs.authorize(self.sac)
         work = client.open_by_key(self.id).get_worksheet(sheet)
-        work.insert_rows(data, 2)
+        work.insert_rows([data], 2)
     
     def get(self, sheet:int):
         client = gs.authorize(self.sac)
