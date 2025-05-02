@@ -14,8 +14,41 @@
         <form action="{{ url_for('match') }}" method="post">
             <details>
                 <summary>Registro</summary>
-                <label for="data[]">Iniciales del scouter</label>
-                <input type="text" name="data[]">
+                <label>Iniciales del scouter</label><br>
+                <input type="text" name="data[]"><br>
+                <label>Numero del equipo</label><br>
+                <input type="number" name="data[]"><br>
+                <label>Numero de match</label><br>
+                <input type="number" name="data[]"><br>
+            </details>
+            <details>
+                <summary>Match</summary>
+                <div>
+                    <h5>Autonomo</h5>
+                    <label>Aciertos</label><br>
+                    <input type="number" name="data[]"><br>
+                    <label for="data[]">Intentos</label><br>
+                    <input type="number" name="data[]"><br>
+                </div>
+                <div>
+                    <h5>TeleOp</h5>
+                    <label>Aciertos</label>
+                    <input type="number" name="data[]"><br>
+                    <label>Intentos</label>
+                    <input type="number" name="data[]"><br>
+                </div>
+                <div>
+                    <h5>End game</h5>
+                    <label>Aciertos</label><br>
+                    <input type="number" name="data[]"><br>
+                    <label>Intentos</label><br>
+                    <input type="number" name="data[]"><br>
+                </div>
+            </details>
+            <details>
+                <summary>Preguntas</summary>
+                <label>Comentarios</label><br>
+                <input type="text" name="data[]"><br>
             </details>
         </form>
     {% endblock %}

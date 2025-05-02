@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block head %}
+        {{ super() }}
+    {% endblock %}
+</head>
+<body>
+    {% block sidebar %}
+        {{ super() }}
+    {% endblock %}
+    {% block body %}
+       <form action="{{ url_for('pits') }}" method="post">
+        <details>
+            <summary>Registros</summary>
+            <label>Iniciales del scouter</label><br>
+            <input type="text" name="data[]"><br>
+            <label>Numero del equipo</label><br>
+            <input type="number" name="data[]"><br>
+        </details>
+        <details>
+            <summary>Robot</summary>
+            <label>Cuantos ciclos hace el Robot</label>
+            <label>Aciertos</label><br>
+            <input type="number" name="data[]"><br>
+            <label>Intentos</label><br>
+            <input type="number" name="data[]"><br>
+        </details>
+        <details>
+            <summary>Preguntas</summary>
+            <label>Cuantas pilas tienes</label><br>
+            <input type="number" name="data[]"><br>
+            <label>Comentarios</label><br>
+            <input type="text" name="data[]"><br>
+        </details>
+       </form> 
+    {% endblock %}
+</body>
+</html>
