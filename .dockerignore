@@ -4,7 +4,8 @@
 Dockerfile
 .dockerignore
 
-__pycache__/
+service\__pycache__
 *pyc
 
 .venv/
+.vscode/

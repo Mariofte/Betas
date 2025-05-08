@@ -31,5 +31,5 @@ def horarios():
     data = api.get(2)
     return render_template('horarios.html', data=data)
 
-#if __name__ == '__main__':
-#    app.run(host='localhost', port=4400, debug=True)
+if __name__ == '__main__':
+    app.run(host='localhost', port=4400)

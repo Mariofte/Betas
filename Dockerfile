@@ -9,4 +9,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-CMD [ "flask", "run", "--host=0.0.0.0", "--debug=True", "--port=4400" ]
+ENV FLASK_APP=main.py
+
+CMD [ "flask", "run", "--host=0.0.0.0", "--port=4400" ]
