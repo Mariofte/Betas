@@ -1,16 +1,25 @@
 details {
     text-align: center;
-    color: white;
+    color: rgba(241, 241, 241, 0.909);
 }
 body {
-    background-color: black;
+    background-color: rgba(26, 9, 119, 0.951);
 }
 label {
-    color: white;
+    color: rgb(0, 0, 0);
 }
 input {
-    color: white;
+    color: rgb(0, 0, 0);
 }
 button {
+    color: rgba(255, 255, 255, 0.93);
+}
+h1 {
+    color: rgb(255, 255, 255);
+}
+p {
+    color: white;
+}
+summary {
     color: white;
 }

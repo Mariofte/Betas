@@ -1,0 +1,5 @@
+.venv/
+__pycache__/
+.vscode/
+Token.json
+recodatorios.txt
