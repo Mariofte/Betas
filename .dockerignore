@@ -9,5 +9,3 @@ service\__pycache__
 
 .venv/
 .vscode/
-
-debug.py
